@@ -8,7 +8,7 @@ I did it this way so everybody can have a look at the code and maybe learn somet
 
 Anyway, I'm planing to make a CommonJS module later when I'll have more time and of course pull requests are welcomed.
 
-![TiSwipeToReveal](https://dl.dropbox.com/u/7744051/TiSwipeToReveal.mov)
+![TiSwipeToReveal](http://youtu.be/g6ewKzweXJI)
 
 
 
