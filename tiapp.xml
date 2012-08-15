@@ -7,7 +7,7 @@
         <target device="android">true</target>
         <target device="blackberry">false</target>
     </deployment-targets>
-    <sdk-version>2.1.0.GA</sdk-version>
+    <sdk-version>2.1.1.GA</sdk-version>
     <id>info.rborn.twitterslide</id>
     <name>twitterslide</name>
     <version>1.0</version>
