@@ -12,4 +12,8 @@ Video: http://www.youtube.com/watch?v=g6ewKzweXJI
 
 
 
+UPDATE 15.08.2012:
+
+Fixed for android  (tested on 4.0.3).
+
 **Licensed under MIT**.
