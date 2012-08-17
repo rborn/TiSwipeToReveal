@@ -23,4 +23,7 @@ Fix for android scroll. The active row if any will hide after the scroll events 
 Fix for some dimensions - it looks ok on tablets too now.
 
 
+
+TODO: make it a CommonJS module
+
 **Licensed under MIT**.
