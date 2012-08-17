@@ -16,4 +16,11 @@ UPDATE 15.08.2012:
 
 Fixed for android  (tested on 4.0.3).
 
+
+UPDATE 17.08.2012:
+
+Fix for android scroll. The active row if any will hide after the scroll events triggers at least 3 times to detect better an intentional scroll.
+Fix for some dimensions - it looks ok on tablets too now.
+
+
 **Licensed under MIT**.

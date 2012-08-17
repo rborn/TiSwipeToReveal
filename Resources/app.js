@@ -15,8 +15,8 @@ var current_row; // this will hold the current row we swiped over, so we can res
 var make_actions_view = function(where) { // create the actions view - the one will be revealed on swipe
 	
 	var view = Ti.UI.createView({
-		backgroundColor: '#fff',
-		height: '70dp'
+		height:Ti.UI.SIZE,
+		width:Ti.UI.SIZE
 	});
 
 	for (var i = 0; i < 6; i++) {
@@ -52,7 +52,7 @@ var make_content_view = function(chars) {// create the content view - the one is
 		color:'#000',
 		top: 0,
 		left: '50dp',
-		width: '260dp',
+		right: '5dp',
 		height: Ti.UI.SIZE
 	});
 
@@ -62,6 +62,7 @@ var make_content_view = function(chars) {// create the content view - the one is
 	return view;
 
 };
+
 
 
 
@@ -112,15 +113,32 @@ function make_data_rows() { // some stub data for the rows.
 make_data_rows();
 
 
+if (Ti.Platform.osname == 'android') {
+
+	var scrolled_times = 0;
+
+	tbl.addEventListener('scrollEnd', function(e) {
+		scrolled_times = 0;
+	});
+
+}
+
 tbl.addEventListener('scroll', function(e) {
 
-	if (current_row) {
+
+	for (var k in e ) {
+		Ti.API.info(k+ ' '+ e[k] );
+	}
+
+	if (!!current_row && (Ti.Platform.osname == 'android' ?  scrolled_times > 3 : true)) {
 		current_row.v2.animate({
 			opacity: 1,
 			duration: 500
 		});
 		current_row = null;
 	}
+	
+	scrolled_times++;
 });
 
 tbl.addEventListener('click', function(e) {
@@ -132,9 +150,6 @@ tbl.addEventListener('click', function(e) {
 			current_row.v2.animate({
 				opacity: 1,
 				duration: 500
-			},
-			function(evt) {
-				// Ti.API.info(current_row);
 			});
 			current_row = null;
 		}

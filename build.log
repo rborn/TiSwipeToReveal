@@ -3,9 +3,9 @@ Logfile initialized
 [DEBUG] /Library/Application Support/Titanium/mobilesdk/osx/2.1.1.GA/android/builder.py install twitterslide /android-sdk-mac_x86 /Volumes/Work/TiSwipeToReveal/ info.rborn.twitterslide 10
 [INFO] Titanium SDK version: 2.1.1 (07/27/12 14:01 0fd84a2)
 [DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.020190 seconds on emulator to get ready
+[DEBUG] waited 0.021135 seconds on emulator to get ready
 [DEBUG] info.rborn.twitterslide installed? False
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
@@ -86,8 +86,8 @@ Logfile initialized
 [DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/2.1.1.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
 [DEBUG] installing native SDK libs
 [DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.022488 seconds on emulator to get ready
+[DEBUG] waited 0.026162 seconds on emulator to get ready
 [INFO] Installing application on device
 [INFO] Application installed. Launch from drawer on Home Screen
