@@ -103,8 +103,6 @@ function make_data_rows() { // some stub data for the rows.
 			});
 		});
 
-
-
 		data.push(row);
 	};
 	tbl.setData(data);
@@ -125,10 +123,6 @@ if (Ti.Platform.osname == 'android') {
 
 tbl.addEventListener('scroll', function(e) {
 
-
-	for (var k in e ) {
-		Ti.API.info(k+ ' '+ e[k] );
-	}
 
 	if (!!current_row && (Ti.Platform.osname == 'android' ?  scrolled_times > 3 : true)) {
 		current_row.v2.animate({
